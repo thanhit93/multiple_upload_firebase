@@ -24,8 +24,8 @@ class LocationActivity : AppCompatActivity() {
     // Tracks the bound state of the service.
     private var mBound: Boolean = false
 
-    private val MY_PERMISSIONS_REQUEST_LOCATION = 68
-    private val REQUEST_CHECK_SETTINGS = 129
+    private val MY_PERMISSIONS_REQUEST_LOCATION: Int = 68
+    private val REQUEST_CHECK_SETTINGS: Int = 129
 
     private var broadcastReceiver: BroadcastReceiver? = null
 
