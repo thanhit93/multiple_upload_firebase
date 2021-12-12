@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         setContentView(R.layout.activity_main)
         injectDependency()
 
-        presenter.attachContext(this, MainActivity@ this)
+        presenter.attachContext(this, MainActivity@this)
 
         presenter.initDatabaseHelper()
 
