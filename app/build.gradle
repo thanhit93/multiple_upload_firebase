@@ -4,11 +4,11 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     defaultConfig {
         applicationId "com.app.android"
         minSdkVersion 17
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -58,6 +58,10 @@ dependencies {
 
     // Page curl
     implementation 'com.github.karacken:karackencurllib:0.0.1'
+
+    // Location service
+    implementation "com.google.android.gms:play-services-location:$play_services_location"
+    implementation "androidx.localbroadcastmanager:localbroadcastmanager:$local_broadcast_manager"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'

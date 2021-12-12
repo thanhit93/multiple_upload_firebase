@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Required for foreground services on P+. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <application
         android:name="com.app.location.BaseApp"
@@ -37,6 +42,11 @@
         <meta-data
             android:name="com.app.downloader.NOTIFICATION_ICON"
             android:resource="@drawable/ic_info24" />
+
+        <service
+            android:name=".services.location.LocationUpdatesService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

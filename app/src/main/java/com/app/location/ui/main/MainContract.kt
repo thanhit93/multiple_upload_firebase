@@ -1,5 +1,4 @@
 package com.app.location.ui.main
-
 import com.app.location.ui.base.BaseContract
 
 /**
@@ -14,5 +13,9 @@ class MainContract {
 
     interface Presenter: BaseContract.Presenter<MainContract.View> {
         fun onDrawerOptionAboutClick()
+        fun initDatabaseHelper()
+        fun enqueue(url: String, savedDir: String, filename: String, headers: String = "download_file",
+                        showNotification: Boolean = true, openFileFromNotification: Boolean = false,
+                        requiresStorageNotLow: Boolean = false): String
     }
 }

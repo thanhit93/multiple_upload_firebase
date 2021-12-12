@@ -23,6 +23,9 @@ ext {
     dagger2_version = '2.15'
     support_version = '26.1.0'
     work_version = "2.2.0"
+    // https://codingwithdhrumil.com/2020/05/exploring-android-location-updates-service-using-kotlin.html
+    play_services_location = "17.0.0"
+    local_broadcast_manager = "1.0.0"
 }
 
 allprojects {

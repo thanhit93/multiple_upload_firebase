@@ -1,5 +1,7 @@
 package com.app.location.ui.base
 
+import android.content.Context
+
 /**
  * Created by tt on 20/02/2021.
  */
@@ -9,6 +11,7 @@ class BaseContract {
         fun subscribe()
         fun unsubscribe()
         fun attach(view: T)
+        fun attachContext(view: T, context: Context)
     }
 
     interface View {
