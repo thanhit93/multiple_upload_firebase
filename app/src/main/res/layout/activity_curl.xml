@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.detail_book.CurlActivity">
 
-    <com.app.location.widgets.page_curl.CurlView
+    <com.app.upload_file.widgets.page_curl.CurlView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/curl" />

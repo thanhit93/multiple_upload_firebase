@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Jibble Test Task</string>
+    <string name="app_name">Upload Task</string>
 
     <!-- Fragment tags -->
     <string name="fragment_about_tag">About Fragment</string>

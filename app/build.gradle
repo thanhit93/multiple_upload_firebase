@@ -2,12 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.app.android"
-        minSdkVersion 21
+        applicationId "com.app.upload_file"
+        minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -18,6 +19,15 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
 
@@ -41,6 +51,7 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:$dagger2_version"
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.3.0'
     kapt "com.google.dagger:dagger-compiler:$dagger2_version"
     kapt "com.google.dagger:dagger-android-processor:$dagger2_version"
     annotationProcessor "com.google.dagger:dagger-compiler:$dagger2_version"
@@ -62,6 +73,12 @@ dependencies {
     // Location service
     implementation "com.google.android.gms:play-services-location:$play_services_location"
     implementation "androidx.localbroadcastmanager:localbroadcastmanager:$local_broadcast_manager"
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+
+    //Runtime permissions
+    implementation 'com.karumi:dexter:6.2.1'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'

@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ui.detail_book.DetailBookActivity">
 
-    <com.app.location.widgets.PageCurlView
+    <com.app.upload_file.widgets.PageCurlView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/dcgpagecurlPageCurlView1"
         android:background="@drawable/page1">
-    </com.app.location.widgets.PageCurlView>
+    </com.app.upload_file.widgets.PageCurlView>
 
 </FrameLayout>
